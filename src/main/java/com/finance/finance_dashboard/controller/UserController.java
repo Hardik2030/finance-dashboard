@@ -27,8 +27,4 @@ public class UserController {
 
         return userService.createUser(user);
     }
-    @GetMapping("/check-role")
-    public String checkRole(Authentication authentication) {
-        return authentication.getAuthorities().toString();
-    }
 }
